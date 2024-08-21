@@ -1,0 +1,21 @@
+# List of campaigns with their respective click counts
+campaigns = {
+    'Spring Sale': 1500,
+    'Summer Special': 2000,
+    'Fall Promo': 1200,
+    'Winter Discounts': 1800
+}
+
+# Initialize an empty list to store results
+results = []
+
+# Loop through each campaign and its click count
+for campaign, clicks in campaigns.items():
+    # Calculate performance metrics (e.g., percentage of total clicks)
+    percentage = (clicks / sum(campaigns.values())) * 100
+    # Store the results in a formatted string
+    results.append(f'{campaign}: {clicks} clicks ({percentage:.2f}% of total)')
+
+# Print out the results
+for result in results:
+    print(result)
