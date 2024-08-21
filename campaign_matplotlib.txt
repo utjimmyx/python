@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+
+# List of campaigns with their respective click counts
+campaigns = {
+    'Spring Sale': 1500,
+    'Summer Special': 2000,
+    'Fall Promo': 1200,
+    'Winter Discounts': 1800
+}
+
+# Extract campaign names and click counts
+campaign_names = list(campaigns.keys())
+click_counts = list(campaigns.values())
+
+# Create a bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(campaign_names, click_counts, color='skyblue')
+
+# Add titles and labels
+plt.title('Click Counts for Marketing Campaigns')
+plt.xlabel('Campaign')
+plt.ylabel('Number of Clicks')
+
+# Show the plot
+plt.show()
